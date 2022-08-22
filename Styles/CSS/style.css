@@ -1,0 +1,10 @@
+.bg-image{
+    background-image: url('../../Images/liverpool-6-aa2.jpg');
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 120vh;
+}
+
+#player{
+    color:violet;
+}
