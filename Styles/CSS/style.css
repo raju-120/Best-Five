@@ -12,3 +12,9 @@
 .card-height{
     height: 5px;
 }
+.total{
+    color: white;
+    justify-content: space-between;
+    text-align: center;
+    background-color: red;
+}
