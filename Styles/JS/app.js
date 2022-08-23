@@ -3,20 +3,21 @@
 function displayPlayer(){
 
 
-    const totalPlayers = document.getElementById('total-added');
-    totalPlayers.innerText = select.length;
-    
     const playerSelect = document.getElementById('player-select');
     playerSelect.textContent = '';
 
     for( let i = 0; i < select.length; i++){
 
-        const ol = document.createElement("ol");
-        ol.innerHTML = `
-        <th>${i+1}</th>
-        <ol>${select[i].playersName}</ol>
-        `;
-        playerSelect.appendChild(ol);
+        if( i < 5){
+            const ol = document.createElement("ol");
+            ol.innerHTML = `
+            
+            <ol>${i+1} : ${select[i].playersName}</ol>
+            `;
+            playerSelect.appendChild(ol);
+        }else{
+            alert ('Maximum 5 Players Allowed');
+        }
     }
 
     
@@ -46,7 +47,9 @@ function getInputFieldElementById(inputId){
     else{
 
         return playerInput; 
- }
+    }
+
+    
 }
     
 
