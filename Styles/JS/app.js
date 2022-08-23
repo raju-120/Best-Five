@@ -24,7 +24,11 @@ function displayPlayer(){
 }  
 
 function addPlayer(element){
-     const playersName = element.parentNode.parentNode.children[0].innerText;
+    
+    
+    const playersName = element.parentNode.parentNode.children[0].innerText;
+     
+    
 
     const player = {
         playersName : playersName,
@@ -40,14 +44,16 @@ function getInputFieldElementById(inputId){
     const playerInputString = playerInputField.value;
     const playerInput = parseInt(playerInputString);
 
-    if(isNaN(inputId)){
+    /* if(isNaN(playerInput)){
         alert ('Please provide the valid Number');
-        playerInputField = ' ';
+        playerInputField.value = ''; 
+        
     }
     else{
 
         return playerInput; 
-    }
+    } 
+    // */return playerInput;
 
     
 }
